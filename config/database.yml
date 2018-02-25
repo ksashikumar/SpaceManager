@@ -1,0 +1,19 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: space_manager_development
+
+test:
+  <<: *default
+  database: space_manager_test
+
+production:
+  <<: *default
+  database: space_manager_production
+  username: space_manager
+  password: <%= ENV['SPACE_MANAGER_DATABASE_PASSWORD'] %>
