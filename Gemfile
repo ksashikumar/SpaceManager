@@ -6,7 +6,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.7'
 gem 'rails', '~> 5.1.5'
 gem 'sass-rails'
-gem 'swagger_engine', git: 'git@github.com:batdevis/swagger_engine.git', branch: 'master'
+gem 'swagger_engine', git: 'https://github.com/batdevis/swagger_engine.git', branch: 'master'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]

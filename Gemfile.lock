@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:batdevis/swagger_engine.git
+  remote: https://github.com/batdevis/swagger_engine.git
   revision: 140a745df2408009512ab3db4c806e938538d98f
   branch: master
   specs:
