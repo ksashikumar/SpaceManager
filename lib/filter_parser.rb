@@ -1,6 +1,6 @@
 module FilterParser
   def where_query
-    @filters_list.map(&:to_condition_str).join(' AND ')
+    (@filters_list || []).map(&:to_condition_str).join(' AND ')
   end
 
   def valid_filters?(filters)
